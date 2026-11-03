@@ -1,0 +1,13 @@
+{
+  "videos": [
+    {
+      "id": "vol-24-oct-5241m",
+      "youtube": "",
+      "titre": "À 5 241 m au-dessus des Alpes",
+      "description": "Installe-toi dans le cockpit d'un planeur LS 8 et regarde partout : les sommets enneigés, les instruments, les ailes et le pilote, qui respire de l'oxygène à cette altitude.",
+      "duree_s": 180,
+      "fichier": "videos/vol-24-oct-5241m/hls/master.m3u8",
+      "poster": "videos/vol-24-oct-5241m/poster.jpg"
+    }
+  ]
+}

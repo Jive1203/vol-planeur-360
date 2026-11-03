@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a1a2f">
+<meta name="robots" content="noindex">
+<meta name="description" content="Monte à bord d'un planeur et regarde tout autour de toi grâce à une vidéo 360°.">
+<title>Vol en planeur 360°</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main id="accueil">
+  <img id="fond" alt="">
+  <div class="carte">
+    <p class="surtitre">Vidéo 360° · Découverte du vol à voile</p>
+    <h1>Monte à bord d'un planeur</h1>
+    <h2 id="titre-video"></h2>
+    <p id="description"></p>
+    <ul id="choix" hidden></ul>
+    <div class="actions">
+      <button id="lecture" class="principal" disabled>Lecture</button>
+      <button id="son-accueil" class="secondaire" aria-pressed="false">Son coupé</button>
+    </div>
+    <p class="aide">Tourne ton téléphone ou glisse le doigt pour regarder partout autour de toi.</p>
+    <a id="lien-youtube" class="lien" target="_blank" rel="noopener" hidden>Voir sur YouTube</a>
+  </div>
+</main>
+
+<section id="lecteur" hidden aria-label="Lecteur vidéo 360°">
+  <canvas id="vue"></canvas>
+  <p id="attente" hidden>Chargement…</p>
+  <p id="message" role="status" hidden></p>
+
+  <button id="retour" class="secondaire haut">Retour</button>
+
+  <div id="barre">
+    <div class="ligne">
+      <button id="pause" class="secondaire">Pause</button>
+      <input id="position" type="range" min="0" max="1000" value="0" aria-label="Position dans la vidéo">
+      <span id="temps">0:00 / 0:00</span>
+    </div>
+    <div class="ligne">
+      <button id="son" class="secondaire" aria-pressed="false">Son coupé</button>
+      <button id="mouvement" class="secondaire" aria-pressed="false" hidden>Activer le mouvement</button>
+      <button id="casque" class="secondaire" aria-pressed="false" hidden>Mode casque</button>
+    </div>
+  </div>
+</section>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
